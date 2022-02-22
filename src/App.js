@@ -1,7 +1,8 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import IdCard from './component/IdCard';
 import Greetings from './component/Greetings';
+import Random from './component/Random';
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
       <Greetings lang="fr">François</Greetings>
       <Greetings lang="en">Eddie</Greetings>
       <Greetings lang="es">Eduardo</Greetings>
+
+      <Random min={3} max={6} />
+      <Random min={1} max={100} />
     </div>
   );
 }
