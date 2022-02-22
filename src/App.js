@@ -6,6 +6,7 @@ import Random from './component/Random';
 import BoxColor from './component/BoxColor';
 import CreditCard from './component/CreditCard';
 import Rating from './component/Rating';
+import DriverCard from './component/DriverCard';
 
 function App() {
   return (
@@ -37,7 +38,7 @@ function App() {
         bank="BNP"
         owner="Maxence Bouret"
         bgColor="#11aa99"
-        color="white" 
+        color="white"
       />
       <CreditCard
         type="Master Card"
@@ -49,7 +50,7 @@ function App() {
         bgColor="#eeeeee"
         color="#222222"
       />
-          
+
       <CreditCard
         type="Visa"
         number="0123456789016984"
@@ -58,12 +59,31 @@ function App() {
         bank="Name of the Bank"
         owner="Firstname Lastname"
         bgColor="#ddbb55"
-        color="white" 
+        color="white"
       />
 
       <Rating>3</Rating>
       <Rating>1</Rating>
       <Rating>4.4</Rating>
+      <DriverCard
+        name="Travis Kalanick"
+        rating={4.2}
+        img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+        car={{
+          model: 'Toyota Corolla Altis',
+          licensePlate: 'CO42DE',
+        }}
+      />
+
+      <DriverCard
+        name="Dara Khosrowshahi"
+        rating={4.9}
+        img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+        car={{
+          model: 'Audi A3',
+          licensePlate: 'BE33ER',
+        }}
+      />
     </div>
   );
 }
